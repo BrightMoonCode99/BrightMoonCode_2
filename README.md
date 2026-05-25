@@ -1,68 +1,41 @@
-# 🌐 BrightMoonCode_2  
-## Infraestructura de Ciberseguridad e IA — Cisco Systems Inc.
+# 🌐 Infraestructura Cisco: Ciberseguridad e IA
 
-> *“Protegemos el futuro digital con inteligencia artificial, ética y arquitectura Zero Trust.”*
+## 👥 Grupo de Trabajo - Infraestructura Cisco Systems Inc.
 
----
-
-## 👥 Equipo de Desarrollo — Ingeniería de Software  
-### Fundación Universitaria Compensar  
-**Profesora:** Eliana Marcela  
-**Fecha:** 06 – 04 – 2026 (Vr0)
-
----
-
-## 🧠 Integrantes & Especialidades
-
-| Nombre | Rol en el Proyecto | Conocimientos Clave |
-|--------|--------------------|----------------------|
-| **Sergio Guzmán Vergara** | Líder de Ciberseguridad Ofensiva | Hacking Ético, Pentesting, Detección de anomalías con IA, Respuesta a incidentes |
-| **Nicolás Rodríguez Salinas** | Analista de Seguridad | Análisis de vulnerabilidades (CVEs), monitoreo de logs, estadísticas de ataques (89% IA-driven) |
-| **Andrés Mateo Lugo** | Especialista en IA para Defensa | Modelos ML, detección de patrones anómalos, LLMs (Cisco Foundation-Sec-8B) |
-| **Thomas Cifuentes Osorio** | Ingeniero de IA en Ciberseguridad | Agentes autónomos (Agentic AI), GraphRAG, gemelos digitales y ontologías |
+| Nombre | Rol | Especialidad |
+|--------|-----|---------------|
+| **Sergio Guzmán Vergara** | Hacking Ético Básico | Detección de vulnerabilidades, pruebas de penetración iniciales y análisis de superficies de ataque. |
+| **Nicolás Rodríguez Salinas** | Análisis Básico | Recolección y procesamiento de datos de seguridad, identificación de patrones anómalos. |
+| **Mateo Andrés Lugo** | IA Básica | Implementación de modelos simples de machine learning para clasificación de tráfico y anomalías. |
+| **Thomas Cifuentes Osorio** | IA Básica | Asistencia en entrenamiento de modelos y automatización de respuestas ante incidentes. |
 
 ---
 
-## 🛡️ Contexto del Proyecto
+## 🛡️ Ciberseguridad + IA: Enfoque desde Cisco
 
-**Problema:**  
-Cisco Systems Inc. ha sido víctima de múltiples campañas de espionaje (Arcane Door, Line Dancer, FIRESTARTERS) y vulnerabilidades críticas como **CVE-2026-20131** (zero-day explotado por ransomware Interlock) y **CVE-2026-20127** (fallo en SD-WAN activo por 3 años).
+### 🔐 Problemática identificada (documento VR2)
+- Vulnerabilidades críticas como **CVE-2026-20131** (zero-day explotado por ransomware Interlock).
+- Explotación de fallos en **SD-WAN** durante 3 años (CVE-2026-20127).
+- Uso creciente de **IA maliciosa** (Slopoly, FraudGPT, WormGPT, Deepfakes).
 
-**Solución propuesta:**  
-Implementar una **arquitectura de ciberseguridad basada en IA** con:
-- Verificación de transacciones humanas
-- Detección de patrones anómalos
-- Accesos temporales y Zero Trust
-- Capacitación continua mediante simulaciones
-
----
-
-## 🤖 Tecnologías Clave (Cisco)
-
-| Tecnología | Uso en el Proyecto |
-|------------|----------------------|
-| **Cisco Talos** | Inteligencia de amenazas en tiempo real |
-| **Cisco XDR** | Detección y respuesta extendida unificada |
-| **Cisco AI Assistant** | Asistente autónomo para seguridad |
-| **GraphRAG + OpenConfig** | Modelado de red mediante grafos de conocimiento |
-| **Cisco Foundation-Sec-8B** | LLM especializado en seguridad (baja latencia) |
-| **Packet Tracer** | Simulación de arquitectura de red segura |
+### 🧠 Solución propuesta
+1. **Verificación de transacciones humanas** para mitigar ataques basados en IA.
+2. **Arquitectura moderna de seguridad** con accesos temporales y microsegmentación.
+3. **Monitoreo constante + capacitación humana** mediante simulaciones realistas.
 
 ---
 
-## 🧩 Diagrama de Arquitectura (simplificado)
+## 🤖 Arquitectura IA para Seguridad (basada en Cisco)
 
 ```mermaid
 graph TD
-  A[Usuario/Cliente] --> B[Webex/Cisco Portal]
-  B --> C[Orquestador de IA]
-  C --> D[LLM + RAG - Foundation-Sec-8B]
-  D --> E[Filtro Anti-Inyección]
-  E --> F[MCP - Firewall / ISE / XDR]
-  F --> G[Infraestructura Cisco]
-  G --> H[Gemelo Digital + GraphRAG]
-
----
-
-> *“Es de vital importancia desarrollar este proyecto puesto que los ciberataques nos complementan para lograr la creación de un sistema que se adapte a las necesidades de la empresa, logrando transparencia y confianza en clientes recurrentes.”*  
-> — Equipo BrightMoonCode_2
+    A[Usuario / Slack] --> B[Interfaz Web/API]
+    B --> C[Orquestador de Intentos]
+    C --> D[LLM + RAG]
+    D --> E[Filtro de Seguridad Anti-Inyección]
+    E --> F[MCP Server - Firewall]
+    E --> G[MCP Server - Identity]
+    E --> H[MCP Server - XDR]
+    F --> I[(Cisco FMC / CDO)]
+    G --> J[(Cisco ISE)]
+    H --> K[(Plataforma XDR)]
