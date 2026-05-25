@@ -23,6 +23,8 @@
 2. **Arquitectura moderna de seguridad** con accesos temporales y microsegmentación.
 3. **Monitoreo constante + capacitación humana** mediante simulaciones realistas.
 
+### Enlce Presentacion
+- https://canva.link/rru0tdt4oo938dt
 ---
 
 ## 🤖 Arquitectura IA para Seguridad (basada en Cisco)
